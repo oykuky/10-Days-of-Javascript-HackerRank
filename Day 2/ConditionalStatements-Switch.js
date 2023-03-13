@@ -6,7 +6,9 @@ function getLetter(s) {
     const C=['h','j','k','l','m'];
     const D=['n','p','q','r','s','t','v','w','x','y','z'];
     let FirstL=s.charAt(0);
+    
     switch(true){
+
         case A.includes(FirstL) :
         letter='A';
         break;
