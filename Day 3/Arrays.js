@@ -11,7 +11,7 @@ function getSecondLargest(nums) {
     return uniq[1]; // result is 5
 }
 
-
+//SOLUTION 2
 function getSecondLargest(nums) {
 let maxFirst = 0
 let maxSecond = 0
