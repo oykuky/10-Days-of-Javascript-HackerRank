@@ -12,18 +12,17 @@ function getSecondLargest(nums) {
 }
 
 //SOLUTION 2
+function getSecondLargest(nums) {
+let maxFirst = 0
+let maxSecond = 0
+for(let i=0;i<nums.length;i++){
+    if(maxFirst<nums[i])
+        maxFirst = nums[i];
+}
 
-// function getSecondLargest(nums) {
-// let maxFirst = 0
-// let maxSecond = 0
-// for(let i=0;i<nums.length;i++){
-//     if(maxFirst<nums[i])
-//         maxFirst = nums[i];
-// }
-
-// for(let i=0;i<nums.length;i++){
-//     if(maxSecond<nums[i] && nums[i] < maxFirst)
-//         maxSecond = nums[i];
-// }
-// return maxSecond
-// }
+for(let i=0;i<nums.length;i++){
+    if(maxSecond<nums[i] && nums[i] < maxFirst)
+        maxSecond = nums[i];
+}
+return maxSecond
+}
