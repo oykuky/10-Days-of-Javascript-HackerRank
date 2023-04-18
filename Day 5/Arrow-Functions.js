@@ -5,5 +5,5 @@
  * nums: An array of numbers.
  */
 function modifyArray(nums) {
-    return nums.map((n) => n % 2 ==0 ? n*2 : n*3 )
+    return nums.map((n) => n % 2 ==0 ? n*2 : n*3)
 }
